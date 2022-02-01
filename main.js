@@ -3,12 +3,14 @@ import "./src/styles/generic/reset.css";
 import "./src/styles/elements/base.css";
 import ScoreBoard from "./src/objects/ScoreBoard";
 import BoardGame from "./src/objects/BoardGame";
+import PlayerSelects from "./src/components/PlayerSelects";
 
 const $root = document.querySelector('#root');
 
 $root.insertAdjacentHTML(
     "beforeend",
     `
+        ${PlayerSelects()}
         ${ScoreBoard()}
         ${BoardGame(6)}
     `
