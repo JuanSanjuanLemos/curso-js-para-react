@@ -1,0 +1,14 @@
+.player-score{
+    display: grid;
+    grid-template-columns: 14px 14px 14px;
+    grid-template-rows: 14px;
+    background-color:var(--color-floral-white);
+    border: 2px solid var(--color-fiery-rose);
+    gap: 1px;
+    padding: 1px;
+}
+
+.player-score > .point{
+
+    background-color: #828282;
+}
