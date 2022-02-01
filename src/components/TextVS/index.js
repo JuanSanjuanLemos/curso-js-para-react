@@ -1,8 +1,8 @@
 import "./style.css";
 
-function TextVs(){
+function TextVs(content="vs"){
     return/*html*/`
-        <p class= "text-vs">vs</p>
+        <p class= "text-vs">${content}</p>
     `;
 }
 
