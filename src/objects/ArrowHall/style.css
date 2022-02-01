@@ -1,0 +1,9 @@
+.arrow-hall{
+    width: 9.6rem;
+    margin: auto;
+}
+
+.arrow-hall > .img-arrow{
+    transform: translateX(77px);
+    transition: transform ease-in-out 400ms;
+}
