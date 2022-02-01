@@ -1,6 +1,6 @@
 import "./style.css";
 import CardGame from "../../components/CardGame";
-import PlayerScore from "../../components/PlayerScore";
+import PlayerName from "../../components/PlayerName";
 
 function BoardGame(amountCards){
     const $htmlCardGame = CardGame();

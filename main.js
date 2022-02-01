@@ -2,24 +2,28 @@ import "./src/styles/settings/colors.css";
 import "./src/styles/generic/reset.css";
 import "./src/styles/elements/base.css";
 import BoardGame from "./src/objects/BoardGame";
-import PlayerScore from "./src/components/PlayerScore";
-import CardGame from "./src/components/CardGame";
+import PlayerName from "./src/components/PlayerName";
+
 
 const $root = document.querySelector('#root');
-const $htmlPlayerScore = PlayerScore(1) + PlayerScore(2);
-const $htmlBoardGame = BoardGame(6);
 
-$root.insertAdjacentHTML("beforebegin",$htmlPlayerScore);
-$root.insertAdjacentHTML("beforeend",$htmlBoardGame);
+$root.insertAdjacentHTML(
+    "beforeend",
+    `
+        ${PlayerName("Playe1")}
+        ${PlayerName("Player2")}
+        ${BoardGame(6)}
+    `
+);
 
 console.log(document.getElementById("card-game"))
 let $CardGame = document.getElementById("card-game");
 
-$CardGame.onclick = function(){
+/*$CardGame.onclick = function(){
     let imgSrc = $CardGame.setAttribute('src');
     if (imgSrc === "images/alura-pixel.png"){
         $CardGame.setAttribute('src','images/javascrpit-pixel.png');
     }else{
         $CardGame.setAttribute('src','images/alura-pixel.png');
     }
-}
+}*/
