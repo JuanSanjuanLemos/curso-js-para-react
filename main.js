@@ -10,7 +10,7 @@ const $root = document.querySelector('#root');
 $root.insertAdjacentHTML(
     "beforeend",
     `
-        ${ArrowHall()}
+        ${ArrowHall(2)}
         ${ScoreBoard()}
         ${BoardGame(6)}
     `

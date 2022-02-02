@@ -1,9 +1,14 @@
 .arrow-hall{
     width: 9.6rem;
     margin: auto;
+    transition: transform ease-in-out 400ms;
 }
 
-.arrow-hall > .img-arrow{
+.arrow-hall > .img-arrow[data-currentPlayer="1"]{
+    transform: translateX(0px);
+    transition: transform ease-in-out 400ms;  
+}
+.arrow-hall > .img-arrow[data-currentPlayer="2"]{
     transform: translateX(77px);
-    transition: transform ease-in-out 400ms;
+    transition: transform ease-in-out 400ms;  
 }
