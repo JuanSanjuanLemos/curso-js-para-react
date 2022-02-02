@@ -16,14 +16,3 @@ $root.insertAdjacentHTML(
     `
 );
 
-console.log(document.getElementById("card-game"))
-let $CardGame = document.getElementById("card-game");
-
-/*$CardGame.onclick = function(){
-    let imgSrc = $CardGame.setAttribute('src');
-    if (imgSrc === "images/alura-pixel.png"){
-        $CardGame.setAttribute('src','images/javascrpit-pixel.png');
-    }else{
-        $CardGame.setAttribute('src','images/alura-pixel.png');
-    }
-}*/
